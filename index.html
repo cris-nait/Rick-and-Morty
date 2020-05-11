@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Evaluación de Traumas de Morty causados por Rick</h1>
+      </header>
+      <main>
+        <div>
+          <span>Digite el tipo de maltrato</span>
+          <ul>
+            <li>(T) ​Trauma mental</li>
+            <li>(P)​ Pánico</li>
+            <li>(F)​ Daño físico</li>
+          </ul>
+          <input
+            type="text"
+            name="tipo_caso"
+            id="tipo_caso"
+            placeholder=""
+            maxlength="1"
+            required
+          />
+          <p>
+            Digite en una escala de 0 a 10 cual es la gravedad de la situación
+          </p>
+          <input
+            type="number"
+            name="gravedad"
+            id="gravedad"
+            step="0.1"
+            min="0.0"
+            max="10.0"
+            maxlength="10.0"
+            required
+          />
+        </div>
+        <div class="btn_container">
+          <button id="btn_submit">Registrar datos</button>
+          <button id="btn_dictamen" disabled>Calcular dictamen</button>
+        </div>
+        <div id="dictamen_container">
+          <span>Dictamen</span>
+          <ol>
+            <li>
+              (T) ​Trauma mental
+              <ul>
+                <li>#Casos:</li>
+                <li>#Promedio de calificación:</li>
+              </ul>
+            </li>
+            <li>
+              (P)​ Pánico
+              <ul>
+                <li>#Casos:</li>
+                <li>#Promedio de calificación:</li>
+              </ul>
+            </li>
+            <li>
+              (F)​ Daño físico
+              <ul>
+                <li>#Casos:</li>
+                <li>#Promedio de calificación:</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
